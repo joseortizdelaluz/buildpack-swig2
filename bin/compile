@@ -24,7 +24,7 @@ echo "SWIG downloaded"
 
 echo "-----> Installing ..."
 tar xzf /tmp/swig.tar.gz -C /tmp
-
+ls -l /tmp
 rm -rf "$BUILD_DIR/.orztmp/swig"
 
 mv /tmp/swig "$BUILD_DIR/.orztmp"
