@@ -17,8 +17,8 @@ mkdir -p "$BUILD_DIR/.orztmp/"
 cd $BUILD_DIR
 
 # Install SWIG
-echo "-----> descargamos swig 3.0.12"
-curl https://raw.githubusercontent.com/joseortizdelaluz/swig2-tar-gz/master/swig2.tar.gz --output /tmp/swig.tar.gz
+echo "-----> descargamos swig 2.0"
+curl https://raw.githubusercontent.com/joseortizdelaluz/python-swig2/master/swig2.tar.gz --output /tmp/swig.tar.gz
 
 echo "SWIG downloaded"
 
@@ -29,7 +29,7 @@ rm -rf "$BUILD_DIR/.orztmp/swig"
 mv /tmp/swig "$BUILD_DIR/.orztmp"
 
 export PATH="$BUILD_DIR/.orztmp/swig/bin":$PATH
-export SWIG_LIB="$BUILD_DIR/.orztmp/swig/share/swig/3.0.12"
+export SWIG_LIB="$BUILD_DIR/.orztmp/swig/share/swig/2.0.5"
 
 echo "export PATH=$PATH" > $BP_DIR/export
 echo "export SWIG_LIB=$SWIG_LIB" >> $BP_DIR/export
