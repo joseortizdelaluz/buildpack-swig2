@@ -17,10 +17,10 @@ mkdir -p "$BUILD_DIR/.orztmp/"
 cd $BUILD_DIR
 
 # Install SWIG
-echo "-----> descargamos swig 2.0"
+echo "-----> descargamos swig 2.0 Acá"
 curl https://raw.githubusercontent.com/joseortizdelaluz/python-swig2/main/swig2.tar.gz --output /tmp/swig.tar.gz
 
-echo "SWIG downloaded"
+echo "SWIG downloaded completada"
 
 echo "-----> Installing ..."
 tar xzf /tmp/swig.tar.gz -C /tmp
