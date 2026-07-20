@@ -21,9 +21,12 @@ echo "-----> descargamos swig 2.0 Acá"
 curl https://raw.githubusercontent.com/joseortizdelaluz/python-swig2/main/swig2.tar.gz --output /tmp/swig.tar.gz
 
 echo "SWIG downloaded completada"
-
+ls -lh /tmp
 echo "-----> Installing ..."
 tar xzf /tmp/swig.tar.gz -C /tmp
+echo "------------------------------------------------"
+ls -lh /tmp
+
 
 rm -rf "$BUILD_DIR/.orztmp/swig"
 
